@@ -49,7 +49,7 @@ After running the docker container open the Jupyter URL displayed in the console
 ## Usage
 
 1. Navigate to the `scripts` directory
-2. Open `clustering_with_roles.ipynb` in Jupyter
+2. Open one of the notebooks in Jupyter
 3. Follow the notebook instructions for analysis
 
 ## About the Dataset
