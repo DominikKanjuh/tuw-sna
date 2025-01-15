@@ -6,6 +6,11 @@ Implied Role Mining involves defining user roles by leveraging platform function
 
 The analysis employs hierarchical clustering using the Ward method. Visualization plays a critical role in this project, with the relationships between roles and clusters illustrated in both 2D and 3D PCA-reduced spaces.
 
+## Project Structure
+
+- `data/`: Contains the processed datasets
+- `scripts/`: Contains the Jupyter notebooks for analysis
+
 ## Prerequisites
 
 - Python >= 3.12
