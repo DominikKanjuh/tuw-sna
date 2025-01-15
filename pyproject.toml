@@ -9,4 +9,6 @@ dependencies = [
     "scipy==1.13.1",
     "scikit-learn==1.4.2",
     "jupyter==1.0.0",
+    "numpy==2.1.2",
+    "seaborn==0.13.2",
 ]
