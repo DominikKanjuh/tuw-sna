@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY data/ ./data/
 COPY scripts/ ./scripts/
+COPY data_creation_scripts/ ./data_creation_scripts/
 
 EXPOSE 8888
 
