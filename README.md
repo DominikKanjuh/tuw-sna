@@ -48,6 +48,51 @@ After running the docker container open the Jupyter URL displayed in the console
 
 ## Usage
 
+### Data preprocessing
+
+In `data_creation_scripts` **ADD** following data:
+
+**ADD** Folder `Additional_Data` with all additional data that was provided:
+`df_Clicks_net.parquet`
+`df_CommunityConnection_filtered_net.parquet`
+`df_Content_DimContentDetails.parquet`
+`df_ContentPages_filtered_net.parquet`
+`df_Postings_filtered_net.parquet`
+`df_User_Activeness.parquet`
+`df_Votes_filtered_net.parquet`
+
+**ADD** empty Folder `Agg_Data` for results (They are already presented in `data` folder).
+
+**ADD** empty Folder `Filtered_Data` for intermediate results. 
+
+**ADD** graph dataset `df_edge_list_directed_users_combined_postings_replies_and_votes_to_postings_net_and_follow_connections.parquet` to the `scripts`.
+
+Run notebooks in given order to create Filtered_Data :
+- `data_creation_scripts\users_reply_follow.ipynb`
+- `data_creation_scripts\user_votes_user.ipynb`
+- `data_creation_scripts\user_community_data.ipynb`
+- `data_creation_scripts\user_click_act.ipynb`
+- `data_creation_scripts\user_acrtiv_centrality.ipynb`
+
+Run to aggregate data 
+`data_creation_scripts\user_all_data_aggregation.ipynb`
+
+
+### Graphs Images
+
+After `Data preprocessing` run in order:
+
+- `data_creation_scripts\extract_user_roles.ipynb`
+- `data_creation_scripts\create_visual_graphs.ipynb`
+
+You will generate two files:
+- subgraph.gexf
+- subgraph2.gexf
+
+Which can be used for Gephi.
+
+### Clustering and Roles Analysis  
+
 1. Navigate to the `scripts` directory
 2. Open one of the notebooks in Jupyter
 3. Follow the notebook instructions for analysis
